@@ -1,0 +1,43 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+/* Making boxes size count padding, border and margin */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/* Removing default margins on elements */
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* ====== Custom properties ====== */
+:root {
+    /* Colors */
+    --bg-clr: hsl(0, 100%, 74%);
+    --btn-clr: hsl(154, 59%, 51%);
+    --price-clr: hsl(248, 32%, 49%);
+    --input-text-clr: hsl(249, 10%, 26%);
+    --terms-clr: hsl(246, 25%, 77%);
+    /* Font */
+    --ff: 'Poppins', sans-serif;
+    --fw-reg: 400;
+    --fw-med: 500;
+    --fw-semiBold: 600;
+    --fw-bold: 700;
+}
+
+/* ====== Style ====== */
