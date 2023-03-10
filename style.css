@@ -114,7 +114,10 @@ body {
   font-weight: var(--fw-semiBold);
 }
 
-.first-name {
+.first-name,
+.last-name,
+.email-address,
+.password {
   position: relative;
 }
 
@@ -125,11 +128,16 @@ body {
   bottom: 0;
   right: 1.5rem;
   margin-block: auto;
+  /* Default visibility */
+  visibility: hidden;
+  opacity: 0;
 }
 
 .error-text {
   margin-block-start: 0.25rem;
   font-size: 0.625rem;
+  /* Default visibility */
+  display: none;
 }
 
 .form input {
@@ -161,9 +169,50 @@ body {
   font-size: 0.625rem;
   padding-inline: 2rem;
   line-height: 1.75;
+  text-align: center;
 }
 
 .agreement span {
   color: var(--bg-clr);
   font-weight: var(--fw-bold);
+}
+
+/* ====== Active states ====== */
+.claim:hover {
+  filter: brightness(1.1);
+  transition: filter 0.3s ease-in-out;
+}
+
+/* ====== Desktop view ====== */
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url(images/bg-intro-desktop.png);
+  }
+
+  /* ====== Main ====== */
+  .container {
+    flex-direction: unset;
+    margin-inline: 10rem;
+  }
+
+  /* ====== Text ====== */
+  .text {
+    flex: 1;
+    text-align: left;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  /* ====== Subscription ====== */
+  .subscription {
+    flex: 1;
+  }
+
+  /* ====== Form ====== */
+  .form input {
+    padding-inline: 2rem;
+  }
 }

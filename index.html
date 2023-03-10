@@ -46,7 +46,6 @@
       <form action="#" class="form">
 
         <div class="input-block">
-
           <div class="first-name">
             <input 
             type="text" 
@@ -64,30 +63,61 @@
 
         </div>
 
+        <div class="input-block">
+          <div class="last-name">
+            <input 
+            type="text" 
+            placeholder="Last Name"
+            required>
+            <div class="error-icon">
+              <img 
+              src="images/icon-error.svg" 
+              alt=""
+              aria-hidden="true">
+            </div>
+          </div>
 
-        
+          <p class="error-text">Last Name cannot be empty</p>
 
-        
+        </div>
+
+        <div class="input-block">
+          <div class="email-address">
+            <input 
+            type="text" 
+            placeholder="Email Adrress"
+            required>
+            <div class="error-icon">
+              <img 
+              src="images/icon-error.svg" 
+              alt=""
+              aria-hidden="true">
+            </div>
+          </div>
+
+          <p class="error-text">Looks like this is not an email</p>
+
+        </div>
+
+        <div class="input-block">
+          <div class="password">
+            <input 
+            type="text" 
+            placeholder="Password"
+            required>
+            <div class="error-icon">
+              <img 
+              src="images/icon-error.svg" 
+              alt=""
+              aria-hidden="true">
+            </div>
+          </div>
+
+          <p class="error-text">Password cannot be empty</p>
+
+        </div>
     
-        <input 
-        type="text" 
-        placeholder="Last Name" 
-        class="last-name"
-        required>
-    
-        <input 
-        type="email" 
-        placeholder="Email Address" 
-        class="email-address"
-        required>
-    
-        <input 
-        type="password" 
-        placeholder="Password" 
-        class="password"
-        required>
-    
-        <button class="claim">
+        <button class="claim" type="submit">
           Claim your free trial 
         </button>
     
