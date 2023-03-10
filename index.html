@@ -24,10 +24,12 @@
 <body>
 
   <main class="container">
+
+    <h1 class="sr-title"> Intro component </h1>
+
     <div class="text">
 
-      <h1 class="title">Learn to code by watching others</h1>
-
+      <h2 class="title">Learn to code by watching others</h2>
       <p class="description">
         See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. 
       </p>
@@ -35,22 +37,37 @@
     </div>
     <div class="subscription">
 
-      <div class="sub-price">
-        <p class="try it">
-          Try it free 7 days
-        </p>
-        <p class="price">
-          then $20/mo. thereafter
+      <div class="price">
+        <p class="try-it">
+           <b>Try it free 7 days</b> then $20/mo. thereafter
         </p>
       </div>
 
       <form action="#" class="form">
 
-        <input 
-        type="text" 
-        placeholder="First Name" 
-        class="first-name"
-        required>
+        <div class="input-block">
+
+          <div class="first-name">
+            <input 
+            type="text" 
+            placeholder="First Name"
+            required>
+            <div class="error-icon">
+              <img 
+              src="images/icon-error.svg" 
+              alt=""
+              aria-hidden="true">
+            </div>
+          </div>
+
+          <p class="error-text">First Name cannot be empty</p>
+
+        </div>
+
+
+        
+
+        
     
         <input 
         type="text" 
@@ -75,12 +92,12 @@
         </button>
     
         <div class="agreement">
-          <p class="notify">
-            By clicking the button, you are agreeing to our
-          </p>
+            
           <p class="terms">
-            Terms and Services
+            By clicking the button, you are agreeing to our
+            <span>Terms and Services</span>         
           </p>
+          
         </div>
     
       </form>
