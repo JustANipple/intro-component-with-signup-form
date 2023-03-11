@@ -34,6 +34,11 @@ function validateForm() {
     namePat.test(inputs[1].children[0].value) &&
     emailPat.test(inputs[2].children[0].value) &&
     passPat.test(inputs[3].children[0].value)) {
-        window.location.reload();
+        for(const input of inputs) {
+            input.children[1].style.visibility = "hidden";
+            input.children[1].style.opacity = "0";
+            input.parentElement.lastElementChild.style.display = "none";
+            input.children[0].value = "";
+        }
     }
 }
